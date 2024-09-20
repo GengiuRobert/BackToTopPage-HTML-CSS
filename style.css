@@ -119,3 +119,19 @@ footer p {
     background-color: darkgreen;
     color: white;
 }
+
+@media screen and (max-width:768px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul li {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}

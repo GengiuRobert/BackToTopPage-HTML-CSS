@@ -1,9 +1,9 @@
 :root {
-    --navbarFooterColor: beige;
+    --navbarFooterColor: #2C3E50;
     --navbarFooterTextColor: black;
-    --hoverColor: tan;
-    --articleBackgroundColor: darkblue;
-    --bodyColor: brown;
+    --hoverColor: #1ABC9C;
+    --articleBackgroundColor: lightblue;
+    --bodyColor: lightblue;
     --navbarFooterFont: 'Courier New', Courier, monospace;
     --articleFont: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -50,6 +50,12 @@ header a:hover:not(.active) {
     background-color: var(--hoverColor);
 }
 
-.active {
-    background-color: var(--hoverColor);
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bodyColor);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }

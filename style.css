@@ -1,6 +1,6 @@
 :root {
     --navbarFooterColor: #2C3E50;
-    --navbarFooterTextColor: black;
+    --navbarFooterTextColor: white;
     --hoverColor: #1ABC9C;
     --articleBackgroundColor: lightblue;
     --bodyColor: lightblue;
@@ -44,12 +44,8 @@ header a {
 
 header a:hover {
     background-color: var(--hoverColor);
+    color: black;
 }
-
-header a:hover:not(.active) {
-    background-color: var(--hoverColor);
-}
-
 
 body {
     display: flex;
@@ -83,4 +79,19 @@ main div {
 
 .article3 {
     flex: 3;
+}
+
+footer {
+    max-width: 100%;
+    background-color: var(--navbarFooterColor);
+    font-size: 1.5em;
+    font-family: var(--navbarFooterFont);
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    padding: 10px;
 }

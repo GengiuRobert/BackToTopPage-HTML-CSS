@@ -1,0 +1,55 @@
+:root {
+    --navbarFooterColor: beige;
+    --navbarFooterTextColor: black;
+    --hoverColor: tan;
+    --articleBackgroundColor: darkblue;
+    --bodyColor: brown;
+    --navbarFooterFont: 'Courier New', Courier, monospace;
+    --articleFont: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 100%;
+    background-color: var(--navbarFooterColor);
+    font-size: 1.5em;
+    font-family: var(--navbarFooterFont);
+    font-weight: bolder;
+}
+
+header ul {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li {
+    flex: 1 1 0;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--navbarFooterTextColor);
+    padding: 10px;
+    text-align: center;
+    transition: background-color .3s;
+}
+
+header a:hover {
+    background-color: var(--hoverColor);
+}
+
+header a:hover:not(.active) {
+    background-color: var(--hoverColor);
+}
+
+.active {
+    background-color: var(--hoverColor);
+}
